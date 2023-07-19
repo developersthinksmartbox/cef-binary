@@ -667,7 +667,7 @@ try
 	
 	# Take the cef version and strip the commit hash, chromium version 
 	# we should end up with something like 73.1.12
-	$CefPackageVersion = $CefVersion.SubString(0, $CefVersion.IndexOf('+'))
+	$CefPackageVersion = $CefVersion.SubString(0, $CefVersion.IndexOf('+')) + ".1"
 	
 	if($Suffix)
 	{
